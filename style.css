@@ -112,3 +112,18 @@ main .feature__section .feature__list--item p {
     color: var(--gray);
     line-height: 27px;
 }
+
+main .feature__section .feature__list--item img {
+    margin: 40px 0;
+}
+
+main .sponsored__icon {
+    margin-bottom: 6em;
+}
+
+main .sponsored__icon img {
+    display: block;
+    width: 150px;
+    margin: 50px auto;
+}
+
