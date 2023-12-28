@@ -1,4 +1,8 @@
+/* FONT STYLING */
+
 @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+/* CSS RESET */
 
 * {
     box-sizing: border-box;
@@ -17,10 +21,16 @@ body {
     text-align: center;
 }
 
+main, header {
+    padding: 40px;
+}
+
+/* HEADER START */
+
 header {
     background: url("images/bg-header-mobile.png") no-repeat;
     background-size: 100%;
-    padding: 40px;
+    
 }
 
 header .banner__head {
@@ -43,7 +53,9 @@ header .banner__content .banner__subtitle {
     color: var(--gray);
 }
 
-header .banner__download--buttons button{
+/* BUTTON STYLE START */
+
+header .banner__download--buttons button, .download--buttons .download__action--buttons button {
     color: white;
     font-weight: 400;
     letter-spacing: 1px;
@@ -56,7 +68,9 @@ header .banner__download--buttons button{
     cursor: pointer;
 }
 
-header .banner__download--buttons button:hover, header .banner__download--buttons button:focus {
+header .banner__download--buttons button:hover, header .banner__download--buttons button:focus,
+.download--buttons .download__action--buttons button:hover,
+.download--buttons .download__action--buttons button:focus {
     opacity: .8;
     font-weight: 600;
 }
@@ -71,18 +85,23 @@ header .banner__download--buttons button:hover, header .banner__download--button
     box-shadow: 0px -2px 0px 1px hsla(233, 93%, 38%, 0.463) inset;
 }
 
+/* BUTTON STYLE END */
+
+/* HEADER END */
+/* MAIN START */
+
 main .feature__section {
     margin: 5em 0;
-    padding: 40px;
+    
 }
 
-main .feature__section .leading__title {
+main .feature__section .leading__title, .download--buttons .leading__title {
     font-size: 1.7rem;
     color: var(--dark-gray);
     margin-bottom: 20px;
 }
 
-main .feature__section .leading__subtitle {
+main .feature__section .leading__subtitle, .download--buttons .leading__subtitle {
     color: var(--gray);
     font-size: .9rem;
     line-height: 27px;
@@ -127,3 +146,4 @@ main .sponsored__icon img {
     margin: 50px auto;
 }
 
+/* MAIN END */
