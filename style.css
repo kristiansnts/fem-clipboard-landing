@@ -4,8 +4,111 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-size: 18px;
+
+    --primary: hsl(171, 66%, 44%);
+    --secondary: hsl(233, 100%, 69%);
+    --dark-gray: hsl(210, 10%, 33%);
+    --gray: hsl(201, 11%, 66%);
 }
 
 body {
     font-family: 'Bai Jamjuree', sans-serif;
+    text-align: center;
+}
+
+header {
+    background: url("images/bg-header-mobile.png") no-repeat;
+    background-size: 100%;
+    padding: 40px;
+}
+
+header .banner__head {
+    margin: 60px;
+}
+
+header .banner__content {
+    margin-bottom: 40px;
+}
+
+header .banner__content .banner__title {
+    color: var(--dark-gray);
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+header .banner__content .banner__subtitle {
+    font-size: .9rem;
+    line-height: 27px;
+    color: var(--gray);
+}
+
+header .banner__download--buttons button{
+    color: white;
+    font-weight: 400;
+    letter-spacing: 1px;
+    display: block;
+    width: 100%;
+    padding: 20px;
+    margin: 20px 0;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+header .banner__download--buttons button:hover, header .banner__download--buttons button:focus {
+    opacity: .8;
+    font-weight: 600;
+}
+
+.button--ios {
+    background-color: var(--primary);
+    box-shadow: 0px -2px 0px 1px hsl(171, 99%, 30%, 0.463) inset;
+}
+
+.button--mac {
+    background-color: var(--secondary);
+    box-shadow: 0px -2px 0px 1px hsla(233, 93%, 38%, 0.463) inset;
+}
+
+main .feature__section {
+    margin: 5em 0;
+    padding: 40px;
+}
+
+main .feature__section .leading__title {
+    font-size: 1.7rem;
+    color: var(--dark-gray);
+    margin-bottom: 20px;
+}
+
+main .feature__section .leading__subtitle {
+    color: var(--gray);
+    font-size: .9rem;
+    line-height: 27px;
+    margin-bottom: 50px;
+}
+
+main .feature__section .feature__image {
+    width: 100%;
+}
+
+main .feature__section .feature__list {
+    margin-top: 50px;
+    list-style-type: none;
+}
+
+main .feature__section .feature__list--item {
+    margin-bottom: 40px;
+}
+
+main .feature__section .feature__list--item h2 {
+    color: var(--dark-gray);
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+main .feature__section .feature__list--item p {
+    color: var(--gray);
+    line-height: 27px;
 }
