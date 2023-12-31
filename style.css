@@ -182,3 +182,72 @@ footer .social__list li img {
 }
 
 /* FOOTER END */
+
+/* Desktop */
+@media screen and (min-width: 720px) {
+
+    .flex {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    header {
+        background: url("images/bg-header-desktop.png") no-repeat;
+        background-size: 100%;
+    }
+
+    header .banner__download--buttons, .download--buttons .download__action--buttons {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    header .banner__download--buttons button, .download--buttons .download__action--buttons button {
+        width: 300px;
+    }  
+
+    main .feature__section {
+        width: 80%;
+        margin: 8em auto;
+    }
+
+    main .feature__section .feature__banner {
+        display: flex;
+    }
+
+    main .feature__section .feature__banner .feature__image {
+        width: 70%;
+        margin-left: -20%;
+    }
+
+    main .feature__section .feature__banner .feature__list:nth-child(2) {
+        text-align: left;
+        margin-left: 10em;
+    }
+
+    main .feature__section .feature__list {
+        text-align: center;
+    }
+
+    main .feature__section .feature__list--item {
+        width: 300px;
+    }
+
+    main .sponsored__icon img {
+        height: 60px;
+        width: 120px;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    footer .footer__list {
+        list-style-type: none;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 40px);
+        text-align: left;
+    }
+}
